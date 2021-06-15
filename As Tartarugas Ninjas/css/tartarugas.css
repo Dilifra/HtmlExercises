@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.cabecalho {
+    background-color: #336699;
+    color: #ffffff;
+    padding: 10px;
+    height:12vh;
+}
+
+.michelangelo .cabecalho {
+    background: #F14900;
+}
+
+.donatello .cabecalho {
+    background: #8B01B1;
+}
+
+.raphael .cabecalho {
+    background: #DF0000;
+}
+
+.conteudo{
+    width: 100%;
+    display: flex;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.artigo {
+    width: 70%;
+    padding:1%;
+    display: inline-block;
+}
+
+.perfil{
+    display:block;
+    margin: 25px auto;
+    max-width: 25%;
+}
+
+.barra-lateral-esquerda, .barra-lateral-direita {
+    width:15%;
+    display:inline-block;
+    height:80vh;
+}
+
+
+.barra-lateral-esquerda ul {
+    list-style-type: none;
+    margin: 1%;
+    padding: 1%;
+}
+
+.barra-lateral-esquerda li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #336699;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.atual{
+    background:dark
+}
+
+.michelangelo .barra-lateral-esquerda li {
+    background: #F14900; 
+}
+
+.donatello .barra-lateral-esquerda li {
+    background: #8B01B1; 
+}
+
+.raphael .barra-lateral-esquerda li {
+    background: #DF0000; 
+}
+
+.barra-lateral-esquerda li a {
+    color: #ffffff;
+    text-decoration: none;
+    width:100%;
+    display: block;
+}
+
+.barra-lateral-esquerda li:hover {
+    background-color: #0099cc;
+}
+
+.michelangelo .barra-lateral-esquerda li:hover {
+    background: #FF9A25;
+}
+
+.donatello .barra-lateral-esquerda li:hover {
+    background: #CF1FC0;
+}
+
+.raphael .barra-lateral-esquerda li:hover {
+    background: #FA4E28;
+}
+
+.barra-lateral-direita h2{
+    color: #336699;
+    margin: 10px 0;
+}
+
+.michelangelo .barra-lateral-direita h2{
+    color: #F14900;
+}
+
+.donatello .barra-lateral-direita h2{
+    color: #8B01B1;
+}
+
+.raphael .barra-lateral-direita h2{
+    color: #DF0000;
+}
+
+.rodape {
+    background:#336699;
+    padding:1%;
+    color: #FFF;
+}
+
+.michelangelo .rodape {
+    background:#F14900;
+}
+
+.donatello .rodape {
+    background:#8B01B1;
+}
+
+.raphael .rodape {
+    background:#DF0000;
+}
+
+/* Desse ponto em diante estamos falando em responsive*/
+@media screen and (max-width: 768px) {
+    .barra-lateral-esquerda, .barra-lateral-direita {
+        width: 100%;
+        height: 100%;
+        padding:2%;
+    }
+
+    .artigo{
+        padding:2%;
+        width:100%;
+        display: inline-block;
+    }
+
+    .rodape {
+        padding:5%;
+    }    
+}
